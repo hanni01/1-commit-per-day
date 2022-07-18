@@ -15,6 +15,10 @@ export class BoardsService {
     private boardRepository: BoardRepository,
   ) {}
 
+  getAllBoard(): Promise<Board[]> {
+    return this.boardRepository.find();
+  }
+
   createBoard(createBoardDto: CreateBoardDto): Promise<Board> {
     return this.boardRepository.createBoard(createBoardDto);
   }
@@ -36,5 +40,12 @@ export class BoardsService {
       throw new NotFoundException(`Can't find Board with id ${id}`);
     }
     console.log('result', result);
+  }
+
+  async updateBoardStatus(id: number, status: BoardStatus): Promise<Board> {
+    const target = await this.getBoardById(id);
+    target.status = status;
+    this.boardRepository.save(target);
+    return target;
   }
 }

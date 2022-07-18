@@ -20,16 +20,11 @@ import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe'
 export class BoardsController {
   constructor(private boardsService: BoardsService) {}
 
-  // @Get('/')
-  // getAllBoard(): Board[] {
-  //   return this.boardsService.getAllBoards();
-  // }
+  @Get()
+  getAllBoard(): Promise<Board[]> {
+    return this.boardsService.getAllBoard();
+  }
 
-  // @Post()
-  // @UsePipes(ValidationPipe)
-  // createBoard(@Body() createBoardDto: CreateBoardDto): Board {
-  //   return this.boardsService.createBoard(createBoardDto);
-  // }
   @Post()
   @UsePipes(ValidationPipe)
   createBoard(@Body() createBoardDto: CreateBoardDto): Promise<Board> {
@@ -40,24 +35,17 @@ export class BoardsController {
   getBoardById(@Param('id') id: number): Promise<Board> {
     return this.boardsService.getBoardById(id);
   }
-  // @Get('/:id')
-  // getBoardById(@Param('id') id: string): Board {
-  //   return this.boardsService.getBoardById(id);
-  // }
+
   @Delete('/:id')
   deleteBoard(@Param('id', ParseIntPipe) id): Promise<void> {
     return this.boardsService.deleteBoard(id);
   }
-  // @Delete('/:id')
-  // deleteBoards(@Param('id') id: string): void {
-  //   this.boardsService.deleteBoard(id);
-  // }
 
-  // @Patch('/:id/status')
-  // updateBoardsStatus(
-  //   @Param('id') id: string,
-  //   @Body('status', BoardStatusValidationPipe) status: BoardStatus,
-  // ): Board {
-  //   return this.boardsService.updateBoardStatus(id, status);
-  // }
+  @Patch('/:id/status')
+  updateBoardsStatus(
+    @Param('id') id: number,
+    @Body('status', BoardStatusValidationPipe) status: BoardStatus,
+  ): Promise<Board> {
+    return this.boardsService.updateBoardStatus(id, status);
+  }
 }
