@@ -20,13 +20,13 @@ public class HelloController {
         return "hello-mvc";
     }
 
-    @GetMapping("hello-string")
+    @GetMapping("hello-string")//문자 그대로 데이터를 직접 넣어준다
     @ResponseBody
     public String helloString(@RequestParam("name")String name){
         return "hello "+ name;
     }
 
-    @GetMapping("hello-api")
+    @GetMapping("hello-api")//객체
     @ResponseBody  //객체가 return 되면 json형태로 반환되는 것이 기본
     public Hello helloApi(@RequestParam("name")String name){
         Hello hello = new Hello();
@@ -37,7 +37,7 @@ public class HelloController {
     static class Hello{
         private String name;
 
-        public String getName() {
+        public String getName() { //getter and setter alt+insert
             return name;
         }
 
