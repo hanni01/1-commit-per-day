@@ -1,6 +1,7 @@
 package hanni.springstart220717.repository;
 
 import hanni.springstart220717.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
@@ -34,5 +35,9 @@ public class MemoryMemberRepository implements MemberRepository{
     @Override
     public List<Member> findAll() {//반환은 실무에서는 list자주 씀. 루프도 편하기 때문.
         return new ArrayList<>(store.values());
+    }
+
+    public void clearStore(){
+        store.clear();
     }
 }
