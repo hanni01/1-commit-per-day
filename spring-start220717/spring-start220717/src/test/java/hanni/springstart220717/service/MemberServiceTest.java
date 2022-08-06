@@ -6,9 +6,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 //test 자동 만들기 단축기 윈도우: ctrl+shift+T
 class MemberServiceTest {
@@ -33,7 +34,7 @@ class MemberServiceTest {
         Member member = new Member();
         member.setName("hellospring");
         //when
-        Long saveId = memberService.join(member);
+        Long saveId = memberService.getOne(member);
 
         //then
         Member findMember = memberService.findOne(saveId).get();
@@ -50,8 +51,8 @@ class MemberServiceTest {
         member2.setName("hellospring");
 
         //when
-        memberService.join(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
+        memberService.getOne(member1);
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.getOne(member2));
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
 //        try{
@@ -71,5 +72,12 @@ class MemberServiceTest {
 
     @Test
     void findOne() {
+        Member member1 = new Member();
+        member1.setId(01L);
+        member1.setName("hellospring");
+
+        Optional<Member> found = memberService.findOne(member1.getId());
+
+        assertThat(found.get().getName()).isEqualTo("hellospring");
     }
 }

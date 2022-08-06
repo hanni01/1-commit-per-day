@@ -19,10 +19,15 @@ public class MemberService {
     }
 
     //회원 가입
-    public Long join(Member member){
+    public String create(Member member){
         //같은 이름이 있는 중복 회원X
         validateDuplicateMember(member);
         memberRepository.save(member);
+        return member.getName()+"님이 가입에 성공하셨습니다.";
+    }
+
+    //멤버로 아이디 찾기
+    public Long getOne(Member member){
         return member.getId();
     }
 
@@ -38,6 +43,7 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
+    //아이디로 멤버 찾기
     public Optional<Member> findOne(Long memberId){
         return memberRepository.findById(memberId);
     }

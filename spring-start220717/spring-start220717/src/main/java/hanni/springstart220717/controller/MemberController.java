@@ -32,7 +32,7 @@ public class MemberController {
         Member member = new Member();
         member.setName(form.getName());
 
-        return "Name: "+ member.getName()+", ID: "+ memberService.join(member);
+        return "Name: "+ member.getName()+", ID: "+ memberService.create(member);
     }
 
     @GetMapping("/members")
