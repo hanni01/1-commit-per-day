@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -33,9 +34,11 @@ class MemberServiceTest {
         //given
         Member member = new Member();
         member.setName("hellospring");
+        member.setId(01l);
         //when
-        Long saveId = memberService.getOne(member);
+        memberService.create(member);
 
+        Long saveId = memberService.getOne(member);
         //then
         Member findMember = memberService.findOne(saveId).get();
         assertThat(member.getName()).isEqualTo(findMember.getName());
@@ -51,8 +54,8 @@ class MemberServiceTest {
         member2.setName("hellospring");
 
         //when
-        memberService.getOne(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.getOne(member2));
+        memberService.create(member1);
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.create(member2));
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
 //        try{
@@ -68,16 +71,29 @@ class MemberServiceTest {
 
     @Test
     void findMembers() {
+        Member member1 = new Member();
+        member1.setName("라라");
+
+        Member member2 = new Member();
+        member2.setName("루루");
+
+        memberService.create(member1);
+        memberService.create(member2);
+
+        List<Member> memberList = memberService.findMembers();
+
+        assertThat(memberList.size()).isEqualTo(2);
     }
 
     @Test
     void findOne() {
         Member member1 = new Member();
-        member1.setId(01L);
-        member1.setName("hellospring");
+        member1.setId(23L);
 
-        Optional<Member> found = memberService.findOne(member1.getId());
+        memberService.create(member1);
 
-        assertThat(found.get().getName()).isEqualTo("hellospring");
+        Member result = memberService.findOne(member1.getId()).get();
+
+        assertThat(result).isEqualTo(member1);
     }
 }

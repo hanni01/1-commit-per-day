@@ -7,9 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class MemberController {
@@ -39,5 +41,11 @@ public class MemberController {
     @ResponseBody
     public List list(Model model){
         return memberService.findMembers();
+    }
+
+    @GetMapping("/members/{id}")
+    @ResponseBody
+    public Optional<Member> findOne(@RequestParam Long id){
+        return memberService.findOne(id);
     }
 }

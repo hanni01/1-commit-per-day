@@ -67,4 +67,20 @@ public class MemoryMemberRepositoryTest {
 
         assertThat(result.size()).isEqualTo(2);
     }
+
+    @Test
+    public void findById(){
+        Member member1 = new Member();
+        member1.setId(01l);
+        repository.save(member1);
+
+        Member member2 = new Member();
+        member2.setId(233l);
+        repository.save(member2);
+
+        Member result = repository.findById(member1.getId()).get();
+
+        assertThat(result).isEqualTo(member1);
+    }
+
 }

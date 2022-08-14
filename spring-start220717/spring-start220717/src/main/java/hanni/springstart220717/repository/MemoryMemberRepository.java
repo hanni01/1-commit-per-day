@@ -1,7 +1,6 @@
 package hanni.springstart220717.repository;
 
 import hanni.springstart220717.domain.Member;
-import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
