@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3594411-bfcd-4c05-a54e-6908b2c75f9e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/audio.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/patric.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/star.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/function.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/logiCal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/logicCal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/project2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/project2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/quote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/1_what_is_html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/3_1_font-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/3_2_list-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/3_3_table-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/4_1_none-sementic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/4_2_sementic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/5_1_inline-block.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/5_2_inline-block2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/6_1_img.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/7_1_form1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-html/7_2_form-input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/board-status.enum.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/board.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/board.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/boards.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/boards.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/boards.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/dto/create-board.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/boards/pipes/board-status-validation.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/config/typeorm.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/tsconfig.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nestjs-board-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/SpringStart220717Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/controller/MemberForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/repository/MemoryMemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/java/hanni/springstart220717/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/templates/hello-mvc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/main/resources/templates/members/createMemberForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/test/java/hanni/springstart220717/SpringStart220717ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/test/java/hanni/springstart220717/repository/MemoryMemberRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-start220717/spring-start220717/src/test/java/hanni/springstart220717/service/MemberServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw_expert/sw1859_백만장자.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/개인정보수집유효기간.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers_codingtest/개인정보수집유효기간.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JxKS4f6uTSMoFcQZNwlD0TbZ6i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/he308/OneDrive/바탕 화면/JHE/코테/Programmers_codingtest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="sortAlpha" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers_codingtest.sortAlpha" />
+      <module name="코테" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers_codingtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.sortAlpha" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3594411-bfcd-4c05-a54e-6908b2c75f9e" name="Changes" comment="" />
+      <created>1673014290715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673014290715</updated>
+      <workItem from="1673960888353" duration="1179000" />
+      <workItem from="1673962085023" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
